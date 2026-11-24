@@ -1,9 +1,10 @@
 name: Random Cron
 on:
-  workflow_run:
-    workflows: ["刷步数"]
-    types:
-      - completed
+  # 2026-11-24 已停用自动触发（仅注释，未删除）：内置定时已改为外部定时器触发，本工作流不再需要自动改写定时。恢复时把下方四行行首的 # 去掉即可。
+  # workflow_run:
+  #   workflows: ["刷步数"]
+  #   types:
+  #     - completed
   workflow_dispatch:
 
 jobs:
